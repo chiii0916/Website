@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="_js/jquery.min.js"></script>
+    <script src="_js/wayou-SlipHover-00cdb7f/src/jquery.sliphover.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#block_1").hover(function(){
+                $("#mask_1").fadeIn("fast")
+            });
+            $("#block_1").mouseleave(function(){
+                $("#mask_1").fadeOut("fast")
+            });
+
+            $("#block_2").hover(function(){
+                $("#mask_2").fadeIn("fast")
+            });
+            $("#block_2").mouseleave(function(){
+                $("#mask_2").fadeOut("fast")
+            });
+
+            $("#block_3").hover(function(){
+                $("#mask_3").fadeIn("fast")
+            });
+            $("#block_3").mouseleave(function(){
+                $("#mask_3").fadeOut("fast")
+            });
+        });
+    </script>
+
+    <style>
+        
+        #title{
+            height:100%;
+            width: 40%;
+            margin-left: 8%;
+            /* background-color: lightslategray; */
+            text-align: center;
+            font-size: 100px;
+            letter-spacing: 8px;
+            color: rgb(132, 137, 143);
+            font-family:monospace;
+            /* float: left; */
+            
+        }
+        .name{
+            /* float: left; */
+            text-align: center;
+            width: 90%;
+            font-size: 55px;
+            font-family:sans-serif;
+            /* display: flex; */
+            color: rgb(78, 78, 78);
+        }
+        .pro_pic{
+            
+            display: block;
+            margin: auto;
+            border: 8px solid rgba(132, 137, 143, 0.884);
+            border-radius: 20px;
+        }
+        .block{
+            background-color: rgba(132, 137, 143, 0.541);
+            width: 80%;
+            height: 350px;
+            margin-left: 10%;
+            border-radius: 50px;
+            margin-top: 50px;
+        }
+        .bar{
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background-color: rgb(132, 137, 143);
+            width: 150px;
+            height: 60%;
+            float: left;
+            margin-top: 30px;
+            position: relative;
+        }
+        .bar_text{
+            font-size: 25px;
+            text-align: center;
+            color: white;
+        }
+        .bar:hover{
+        background-color: rgb(70, 75, 80);
+        }
+        .mask{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        .block:hover .pro_pic{
+            opacity: 10%;
+        }
+        .block:hover .name{
+            opacity:20%;
+        }
+        .mask{
+            display: none;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.75);
+            border-radius: 50px;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java</title>
+</head>
+<body>
+    <div style="height: 120px;width: 100%;">
+        <!-- <div id="title">ABOUT ME</div> -->
+        <h1  id="title">Java</h1>
+    </div>
+    <!--circle-->
+    <div class="block" id="block_1">
+        <div style="height: 100%;width: 50%;float: left;display: flex; align-items: center;justify-content: center;">
+            <img class="pro_pic" style="width: auto;height: 90%;" src="img/portfolio/java_circle.png">
+        </div>
+        <div style="height: 100%;width: 50%;float: left;display: flex;justify-content: center;align-items: center;">
+            <h3 class="name" style="text-align: center;">Draw_Circle</h3>
+    </div>
+    <div class="mask" id="mask_1">
+    </div>
+        
+    </div>
+    <!--star-->
+
+        <div class="block" id="block_2">
+            <div style="height: 100%;width: 50%;float: left;display: flex; align-items: center;justify-content: center;">
+                <img class="pro_pic" style="width: auto;height: 90%;" src="img/portfolio/java_stars.png">
+        </div>
+        <div style="height: 100%;width: 50%;float: left;display: flex;justify-content: center;align-items: center;">
+                <h3 class="name">Draw_Stars</h3>
+        </div>
+        <div class="mask" id="mask_2">
+        </div>
+            </div>
+    <!--繪圖板-->
+    <div class="block" id="block_3">
+        <div style="height: 100%;width: 50%;float: left;display: flex; align-items: center;justify-content: center;">
+            <img class="pro_pic" style="width: auto;height: 90%;" src="img/portfolio/java_繪圖板.png">
+        </div>
+        <div style="height: 100%;width: 50%;float: left;display: flex;justify-content: center;align-items: center;">
+            <h3 class="name">繪圖板</h3>
+    </div>
+    <div class="mask" id="mask_3">
+    </div>
+        </div>
+
+        <!--影像分析處理-->
+    <div class="block" id="block_4">
+        <div style="height: 100%;width: 50%;float: left;display: flex; align-items: center;justify-content: center;">
+            <img class="pro_pic" style="width: 90%;height: auto;" src="img/portfolio/java-影像分析.png">
+        </div>
+        <div style="height: 100%;width: 50%;float: left;display: flex;justify-content: center;align-items: center;">
+            <h3 class="name">影像分析處理</h3>
+    </div>
+    <div class="mask" id="mask_4">
+    </div>
+        </div>
+
+        <!--象棋-->
+    <div class="block" id="block_5">
+        <div style="height: 100%;width: 50%;float: left;display: flex; align-items: center;justify-content: center;">
+            <!-- <img class="pro_pic" style="width: 90%;height: auto;" src=""> -->
+        </div>
+        <div style="height: 100%;width: 50%;float: left;display: flex;justify-content: center;align-items: center;">
+            <h3 class="name">象棋對戰</h3>
+    </div>
+    <div class="mask" id="mask_5">
+    </div>
+        </div>
+
+        <div style="height: 120px;width: 100%;float: right;margin-top: 70px;">
+            <a href="index.html"><div class="bar" style="margin-left: 32%;"><p class="bar_text">Home</p></div></a>
+            <a href="works.html"><div class="bar" style="margin-left: 2%;"><p class="bar_text">Works</p></div></a>
+            <a href="experience.html"><div class="bar" style="margin-left: 2%;"><p class="bar_text">Experience</p></div></a>
+            
+        </div>
+</body>
+</html>

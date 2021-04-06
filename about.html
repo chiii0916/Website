@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+         #title{
+            height:100%;
+            width: 40%;
+            margin-left: 8%;
+            /* background-color: lightslategray; */
+            text-align: center;
+            font-size: 100px;
+            letter-spacing: 8px;
+            color: rgb(139, 151, 163);
+            font-family:monospace;
+            /* float: left; */
+            
+        }
+        .block{
+            width: 70%;
+            height: 300px;
+            background-color: rgba(139, 151, 163, 0.5);
+            border-radius: 50px;
+            margin-left: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .text{
+            font-size: 20px;
+            width: 90%;
+            text-align: center;
+            color: rgb(68, 68, 68);
+        }
+        .bar{
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background-color: rgb(139, 151, 163);
+            width: 150px;
+            height: 60%;
+            float: left;
+            margin-top: 30px;
+        }
+        .bar_text{
+            font-size: 25px;
+            text-align: center;
+            color: white;
+        }
+        .bar:hover{
+            background-color: rgb(172, 182, 192);
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+</head>
+<body>
+    <div style="height: 120px;width: 100%;">
+        <!-- <div id="title">ABOUT ME</div> -->
+        <h1  id="title">About Me</h1>
+    </div>
+    <!--PIC-->
+    <div style="width: 90%;height: 500px;margin-left: 5%;">
+        <div style="width: 50%;height: 100%;float: left;display: flex;justify-content: center;align-items: center;">
+            <img style="width: 95%;height: auto;border-radius: 40px;" src="img/website/IMG_7635.JPG">
+        </div>
+        <div style="width: 50%;height: 100%;float: left;display: flex;justify-content: center;align-items: center;">
+            <img style="width: 95%;height: auto;border-radius: 40px;" src="img/website/IMG_7343.JPG">
+        </div>
+    </div>
+    <!--關於我-->
+    <div class="block">
+        <p class="text">我是黃筠棋，88年9月16日生，是一名基督徒。<br>曉明女中、台中女中、元智資傳。<br>也許你會想問我，大學怎麼是元智，這個問題自從上大學以來也聽過別人問了好多遍，包括我自己。<br>曾經我也以為自己會像以前一樣順遂的考上國立大學，但自滿和懶惰讓我面對了現實，原來我什麼都不是。也因此，我瞭解了學習是需要付出努力和時間的，也調整了過往對自己過度自信的心態。<br>現在，我會感謝這段時間在元智的自己，磨練我成為了更好的人。</p>
+    </div>
+    <!--個性-->
+    <div class="block">
+        <p class="text">我是充滿理性但又帶點感性的人，傾聽別人的煩惱時，會先感性的同理他的立場再理性的分析並直接地給予建議，當自己面對問題時會努力找出解決方式，不喜歡倚賴別人也不喜歡輕易放棄。<br>對於自己份內的事會負責到底，有餘力時也喜歡成為別人的幫助。<br>喜歡思考各樣的問題，有自己的一套見解但也樂於跟別人切磋想法。<br>雖然有點厭世，但心裡一直對生活抱有盼望也喜歡正向思考，常常聽別人說是個樂觀開朗的人。</p>
+    </div>
+    <!--專長-->
+    <div class="block">
+        <p class="text">主修程式設計和數位多媒體，學習過C/C++、C#、Java、HTML、CSS、Javascript等語言，<br>也使用過Unity、Arduino、Photoshop、After Effects、Maya、FCPX等軟體。<br>對遊戲製作、人機互動、混合實境、前後端工程、數據分析抱有強烈興趣。</p>
+    </div>
+    <!--興趣-->
+    <div class="block">
+        <p class="text">小時候學過畫畫和鋼琴，長大後自學了攝影和剪片。<br>喜歡攝影的理由很簡單，因為想好好記錄生活中的美好事物，覺得生活中處處是驚喜，就連路邊的一朵小野花也值得收進鏡頭裡。<br>閒暇時喜歡看看電影或看看戲劇，喜歡細細品味每個作品想要表達的理念也喜歡在戲劇中迷失自己、遠離生活的壓力，不過有時戲劇卻會讓我們更貼近現實呢。<br>偶爾會來趟小旅行，也許是做好充分計劃的也有可能是漫無目的，哪種我都喜歡，喜歡旅行是因為喜歡在旅行中放空沈澱自己、然後更認識自己，再打理好心情然後重新出發。</p>
+    </div>
+    <!--技能-->
+    <div class="block">
+        <p class="text">因為在營會中擔任過各式各樣的職位，鍛鍊出各樣的技能。具有領導力和統籌力，也擅於擔任溝通的角色。能將繁瑣的行政事務規劃好也能發想籌劃一場活動，有幾次的主持經驗因此具有控場能力。</p>
+    </div>
+
+    <!--Bar-->
+    <div style="height: 120px;width: 100%;float: right;margin-top: 20px;">
+        <a href="index.html"><div class="bar" style="margin-left: 32%;"><p class="bar_text">Home</p></div></a>
+        <a href="works.html"><div class="bar" style="margin-left: 2%;"><p class="bar_text">Works</p></div></a>
+        <a href="experience.html"><div class="bar" style="margin-left: 2%;"><p class="bar_text">Experience</p></div></a>
+        
+        
+        
+    </div>
+    <div style="height: 50px;width: 100%;float: left;"></div>
+    
+    
+</body>
+</html>
