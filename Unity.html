@@ -4,7 +4,7 @@
     <script src="_js/wayou-SlipHover-00cdb7f/src/jquery.sliphover.min.js"></script>
 
     <script>
-        $(document).ready(function(){
+        /*$(document).ready(function(){
             $("#block_1").hover(function(){
                 $("#mask_1").fadeIn("fast")
             });
@@ -25,7 +25,7 @@
             $("#block_3").mouseleave(function(){
                 $("#mask_3").fadeOut("fast")
             });
-        });
+        });*/
     </script>
 
 
@@ -95,12 +95,12 @@
             height: 100%;
             position: absolute;
         }
-        .block:hover .pro_pic{
+        /*.block:hover .pro_pic{
             opacity: 10%;
         }
         .block:hover .name{
             opacity:20%;
-        }
+        }*/
         .mask{
             display: none;
             width: 100%;
@@ -125,7 +125,7 @@
 
     <div id="page">
     <!--2D戰鬥機-->
-    
+    <a href="unity_airplane.html">
     <div class="block" id="block_1" >
         <!-- <div class="mask"> -->
         <div style="height: 100%;width: 50%;float: left;display: flex; align-items: center;justify-content: center;">
@@ -137,20 +137,23 @@
     <div class="mask" id="mask_1">
         </div>
     </div>
-    
+</a>
     <!--2D迷宮-->
 
-        <div class="block" id="block_2" >
+    <a href="unity_maze.html">   
+    <div class="block" id="block_2" >
             <div style="height: 100%;width: 50%;float: left;display: flex; align-items: center;justify-content: center;">
                 <img class="pro_pic" style="width: 90%;height: auto;" src="img/portfolio/2D迷宮打怪.png">
             </div>
             <div style="height: 100%;width: 50%;float: left;display: flex;justify-content: center;align-items: center;">
                 <h3 class="name">2D迷宮小遊戲</h3>
         </div>
-        <div class="mask" id="mask_2">
-        </div>
+        <!-- <div class="mask" id="mask_2">
+        </div> -->
             </div>
+    </a> 
     <!--3D 火災逃生VR-->
+    <a href="unity_3DVR.html">
     <div class="block" id="block_3">
         <div style="height: 100%;width: 50%;float: left;display: flex; align-items: center;justify-content: center;">
             <img class="pro_pic" style="width: 90%;height: auto;" src="img/portfolio/火災逃生VR-選項.png">
@@ -162,7 +165,7 @@
     </div> 
         </div>
     </div>
-    
+    </a>
 
         <div style="height: 120px;width: 100%;float: right;margin-top: 70px;">
             <a href="index.html"><div class="bar" style="margin-left: 32%;"><p class="bar_text">Home</p></div></a>

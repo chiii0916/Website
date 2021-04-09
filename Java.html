@@ -4,28 +4,28 @@
     <script src="_js/wayou-SlipHover-00cdb7f/src/jquery.sliphover.min.js"></script>
 
     <script>
-        $(document).ready(function(){
-            $("#block_1").hover(function(){
-                $("#mask_1").fadeIn("fast")
-            });
-            $("#block_1").mouseleave(function(){
-                $("#mask_1").fadeOut("fast")
-            });
+        // $(document).ready(function(){
+        //     $("#block_1").hover(function(){
+        //         $("#mask_1").fadeIn("fast")
+        //     });
+        //     $("#block_1").mouseleave(function(){
+        //         $("#mask_1").fadeOut("fast")
+        //     });
 
-            $("#block_2").hover(function(){
-                $("#mask_2").fadeIn("fast")
-            });
-            $("#block_2").mouseleave(function(){
-                $("#mask_2").fadeOut("fast")
-            });
+        //     $("#block_2").hover(function(){
+        //         $("#mask_2").fadeIn("fast")
+        //     });
+        //     $("#block_2").mouseleave(function(){
+        //         $("#mask_2").fadeOut("fast")
+        //     });
 
-            $("#block_3").hover(function(){
-                $("#mask_3").fadeIn("fast")
-            });
-            $("#block_3").mouseleave(function(){
-                $("#mask_3").fadeOut("fast")
-            });
-        });
+        //     $("#block_3").hover(function(){
+        //         $("#mask_3").fadeIn("fast")
+        //     });
+        //     $("#block_3").mouseleave(function(){
+        //         $("#mask_3").fadeOut("fast")
+        //     });
+        // });
     </script>
 
     <style>
@@ -84,20 +84,20 @@
             text-align: center;
             color: white;
         }
-        .bar:hover{
+         .bar:hover{
         background-color: rgb(70, 75, 80);
-        }
+        } 
         .mask{
             width: 100%;
             height: 100%;
             position: absolute;
         }
-        .block:hover .pro_pic{
+        /* .block:hover .pro_pic{
             opacity: 10%;
         }
         .block:hover .name{
             opacity:20%;
-        }
+        } */
         .mask{
             display: none;
             width: 100%;
@@ -166,10 +166,10 @@
 
         <!--象棋-->
     <div class="block" id="block_5">
-        <div style="height: 100%;width: 50%;float: left;display: flex; align-items: center;justify-content: center;">
-            <!-- <img class="pro_pic" style="width: 90%;height: auto;" src=""> -->
-        </div>
-        <div style="height: 100%;width: 50%;float: left;display: flex;justify-content: center;align-items: center;">
+        <!-- <div style="height: 100%;width: 50%;float: left;display: flex; align-items: center;justify-content: center;">
+             <img class="pro_pic" style="width: 90%;height: auto;" src=""> 
+        </div> -->
+        <div style="height: 100%;width: 100%;float: left;display: flex;justify-content: center;align-items: center;">
             <h3 class="name">象棋對戰</h3>
     </div>
     <div class="mask" id="mask_5">
