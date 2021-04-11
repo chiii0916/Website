@@ -25,6 +25,10 @@
             justify-content: center;
             align-items: center;
         }
+        #intro b{
+            font-size: 23px;
+            color: rgb(107, 97, 89);
+        }
     </style>
 <head>
     <meta charset="UTF-8">
@@ -67,8 +71,13 @@
     <p style="position: relative;font-size: 38px;font-family: '微軟正黑體','黑體-繁','monospace';color:rgb(126,113,102);font-weight: 700;">作品理念</p>
     </div>
 
-    <div class="block" style="height: 300px;background-color:rgb(180, 165, 153);margin-left: 15%;border-radius: 30px;">
-    <p></p>
+    <div class="block" style="height: 300px;background-color:rgb(180, 165, 153);margin-left: 15%;border-radius: 30px;display: flex;justify-content: center;align-items: center;">
+    <p style="width: 90%; position: relative;text-align: center;color: white;font-size: 25px;font-family: '微軟正黑體','黑體-繁','monospace';line-height: 50px;">
+        聖誕節在很多人的心中是一個溫暖的節日，<br>
+        每到了聖誕節，就常常看見聖誕樹的身影。<br>
+        於是我們想做一棵聖誕樹，
+        將聖誕節的溫暖可以無時無刻陪伴我們。
+    </p>
     </div>
 
     <!--作品介紹-->
@@ -76,17 +85,59 @@
         <p style="position: relative;font-size: 38px;font-family: '微軟正黑體','黑體-繁','monospace';color:rgb(126,113,102);font-weight: 700;">作品介紹</p>
         </div>
     
-        <div class="block" style="height: 300px;background-color:rgb(180, 165, 153);margin-left: 15%;border-radius: 30px;">
-        <p></p>
+        <div class="block" style="height: 550px;background-color:rgb(180, 165, 153);margin-left: 15%;border-radius: 30px;">
+        <p id="intro" style="width: 90%; position: relative;text-align: center;color: white;font-size: 21px;font-family: '微軟正黑體','黑體-繁','monospace';line-height: 40px;">
+            <b>·LED</b><br>
+            全體為7x7x7的立方體。<br>
+            內層是一顆由綠燈為主、紅燈點綴的立體聖誕樹，外層由白燈包裹。<br>
+            <b>·電路</b><br>
+            垂直線為正極、平面為負極，<br>
+            每條垂直線共用一個正極，每一平面共用一個負極。<br>
+            將49條正極分別接到七個移位暫存器，7條負極接到一個移位暫存器。<br>
+            將燈泡按照聖誕樹的順序分組，同組代表同個腳位，以此方便程式控制。<br>
+            <b>·動畫</b><br>
+            三種動畫模式。<br>
+            第一種為聖誕樹由上而下依序亮起，最後是一顆完整的聖誕樹<br>
+            第二種為整個立方體分層亮起。<br>
+            第三種為隨機閃爍。
+        </p>
         </div>
+
+        <!--負責內容-->
+    <div class="block" style="height: 100px;margin-left: 15%;">
+        <p style="position: relative;font-size: 38px;font-family: '微軟正黑體','黑體-繁','monospace';color:rgb(126,113,102);font-weight: 700;">負責項目</p>
+        </div>
+    
+        <div class="block" style="height: 300px;background-color:rgb(180, 165, 153);margin-left: 15%;border-radius: 30px;display: flex;justify-content: center;align-items: center;">
+        <p style="width: 90%; position: relative;color: white;font-size: 30px;font-family: '微軟正黑體','黑體-繁','monospace';line-height: 50px;padding-left: 40%;">
+            <b>·</b>外觀製作<br>
+            <b>·</b>電路邏輯<br>
+            <b>·</b>電路圖<br>
+        </p>
+        </div>
+
+
     <!--心得-->
     <div class="block" style="height: 100px;margin-left: 15%;">
         <p style="position: relative;font-size: 38px;font-family: '微軟正黑體','黑體-繁','monospace';color:rgb(126,113,102);font-weight: 700;">心得</p>
         </div>
     
-        <div class="block" style="height: 300px;background-color:rgb(180, 165, 153);margin-left: 15%;border-radius: 30px;">
-        <p></p>
+        <div class="block" style="height: 430px;background-color:rgb(180, 165, 153);margin-left: 15%;border-radius: 30px;">
+        <p style="width: 90%; position: relative;text-align: center;color: white;font-size: 23px;font-family: '微軟正黑體','黑體-繁','monospace';line-height: 40px;">
+            做這個光立方花了非常非常非常多的時間，<br>
+            一開始焊接的時候就已經花了很大量的時間和心力，<br>
+            我主要負責電路的部分，查了很多資料去了解移位暫存器的應用，<br>
+            也很幸運的順利想通整個電路邏輯並將燈泡分組，<br>
+            再搭配厲害的程式負責人，讓我們成為唯一一組有多種動畫模式的組別。<br>
+            這個作品最印象深刻的是時間很緊迫，<br>
+            最後一個晚上大家都留在學校一起通宵努力，<br>
+            也一起聊天、交流、互相鼓勵，氣氛很溫馨，<br>
+            我覺得是一個雖然很累但卻很溫暖的夜晚。
+        </p>
         </div>
+
+
+        <div style="height: 100px;width: 100%;float: left;"></div>
 
 </body>
 </html>

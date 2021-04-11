@@ -25,6 +25,10 @@
             justify-content: center;
             align-items: center;
         }
+        #intro b{
+            color: rgb(107, 97, 89);
+            font-size: 23px;
+        }
     </style>
 <head>
     <meta charset="UTF-8">
@@ -66,8 +70,8 @@
     <p style="position: relative;font-size: 38px;font-family: '微軟正黑體','黑體-繁','monospace';color:rgb(126,113,102);font-weight: 700;">作品理念</p>
     </div>
 
-    <div class="block" style="height: 300px;background-color:rgb(180, 165, 153);margin-left: 15%;border-radius: 30px;">
-    <p></p>
+    <div class="block" style=" height: 300px;background-color:rgb(180, 165, 153);margin-left: 15%;border-radius: 30px;display: flex;justify-content: center;align-items: center;">
+    <p style="text-align: center; width: 90%; position: relative;font-size: 25px;font-family:'微軟正黑體','黑體-繁','monospace' ;color: white;line-height: 50px;">這是大三上「手機遊戲程式設計」課程的課堂作業，主題和素材皆由教授提供，主要學習關卡設計和控制方式等。</p>
     </div>
 
     <!--作品介紹-->
@@ -75,17 +79,39 @@
         <p style="position: relative;font-size: 38px;font-family: '微軟正黑體','黑體-繁','monospace';color:rgb(126,113,102);font-weight: 700;">作品介紹</p>
         </div>
     
-        <div class="block" style="height: 300px;background-color:rgb(180, 165, 153);margin-left: 15%;border-radius: 30px;">
-        <p></p>
+        <div class="block" style="height: 400px;background-color:rgb(180, 165, 153);margin-left: 15%;border-radius: 30px;display: flex;justify-content: center;align-items: center;">
+        <p id="intro" style="position: relative;text-align: center;color: white;font-size: 20px;">
+            <b>·首頁</b><br>
+                首頁有兩個動態按鈕：開始/離開。<br>
+
+            <b>·LOGO影片</b><br>
+                播放公司形象影片。<br>
+
+            <b>·關卡</b><br>
+                共有九關，第一關之後的關卡初始鎖定，只有過關時才能解鎖下一關。<br>
+
+            <b>·玩家</b><br>
+                玩家滑動陀螺儀控制一艘戰鬥機，戰鬥機會自動發射砲彈。<br>
+
+            <b>·敵機</b><br>
+                敵機將隨機生成並自動發射砲彈，若被玩家機射到會消滅。<br>
+
+            <b>·分數</b><br>
+                每一關都有一個通關分數門檻，若打倒敵機可得分，被敵機打到會扣分，當分數到達門檻時才會解鎖下一關。
+        </p>
         </div>
     <!--心得-->
     <div class="block" style="height: 100px;margin-left: 15%;">
         <p style="position: relative;font-size: 38px;font-family: '微軟正黑體','黑體-繁','monospace';color:rgb(126,113,102);font-weight: 700;">心得</p>
         </div>
     
-        <div class="block" style="height: 300px;background-color:rgb(180, 165, 153);margin-left: 15%;border-radius: 30px;">
-        <p></p>
+        <div class="block" style="height: 300px;background-color:rgb(180, 165, 153);margin-left: 15%;border-radius: 30px;display: flex;justify-content: center;align-items: center;">
+        <p style="position: relative;color: white;font-size: 21px;text-align: center;line-height: 40px;width: 90%;">之前的Unity專案沒有開發過手遊類的，所以這是我第一個完整的手遊專案。<br>覺得這當中最有收穫的是陀螺儀和解鎖關卡的部分，因為解鎖關卡使用到場景跟場景之間的資料傳送，讓我對於資料傳輸上面有了全新的認識，<br>陀螺儀則是跳脫了以往總是用鍵盤或滑鼠控制，而陀螺儀不止可以使用在手機上也可以使用在搖桿上，未來在遊戲開發上又多了更多的控制選擇。</p>
         </div>
+    
+
+    
+    <div style="height: 100px;width: 100%;float: left;"></div>
 
 </body>
 </html>

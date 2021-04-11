@@ -25,6 +25,10 @@
             justify-content: center;
             align-items: center;
         }
+        #intro b{
+            font-size: 23px;
+            color: rgb(107, 97, 89);
+        }
     </style>
 <head>
     <meta charset="UTF-8">
@@ -69,8 +73,8 @@
     <p style="position: relative;font-size: 38px;font-family: '微軟正黑體','黑體-繁','monospace';color:rgb(126,113,102);font-weight: 700;">作品理念</p>
     </div>
 
-    <div class="block" style="height: 300px;background-color:rgb(180, 165, 153);margin-left: 15%;border-radius: 30px;">
-    <p></p>
+    <div class="block" style="height: 300px;background-color:rgb(180, 165, 153);margin-left: 15%;border-radius: 30px;display: flex;justify-content: center;align-items: center;">
+    <p style="position: relative;color: white;width: 90%;text-align: center;font-size: 25px;font-family: '微軟正黑體','黑體-繁','monospace';line-height: 50px;">這個作品是為了VRAR教育應用比賽而製作的，發想是那陣子發生了一些火災的事故，正確的火災逃生觀念被熱烈討論，才發現其實普遍大眾對於火災逃生的觀念都停留在過去錯誤的觀念，所以決定寓教於樂，製作一款兼具娛樂性的火災逃生VR遊戲。</p>
     </div>
 
     <!--作品介紹-->
@@ -78,17 +82,59 @@
         <p style="position: relative;font-size: 38px;font-family: '微軟正黑體','黑體-繁','monospace';color:rgb(126,113,102);font-weight: 700;">作品介紹</p>
         </div>
     
-        <div class="block" style="height: 300px;background-color:rgb(180, 165, 153);margin-left: 15%;border-radius: 30px;">
-        <p></p>
+        <div class="block" style="height: 500px;background-color:rgb(180, 165, 153);margin-left: 15%;border-radius: 30px;display: flex;justify-content: center;align-items: center;">
+        <p id="intro" style="text-align: center;position: relative;font-size: 21px;color: white;font-family: '微軟正黑體','黑體-繁','monospace';line-height: 40px;width: 90%;">
+            使用第一人稱視角。<br>
+            <b>·血條</b><br>
+            會隨著時間減少，回答問題的對錯會影響增減，當血條為零時即逃生失敗。<br>
+            <b>·時間</b><br>
+            會逐漸減少，倒數到一定時間時會啟動門/窗可逃生，當時間倒數完未逃生成功的話即失敗。<br>
+            <b>·互動物件</b><br>
+            在火場中重要的物件，點擊會觸發問答，答對會增加血量、答錯會減少血量。<br>
+            <b>·場景</b><br>
+            以小套房為場景，火勢會隨機生成並隨著時間越來越大。<br>
+            <b>·結局</b><br>
+            逃生失敗會提醒玩家需要注意的逃生知識，並附上消防局的網頁連結。
+
+        </p>
         </div>
+
+        <!--負責內容-->
+    <div class="block" style="height: 100px;margin-left: 15%;">
+        <p style="position: relative;font-size: 38px;font-family: '微軟正黑體','黑體-繁','monospace';color:rgb(126,113,102);font-weight: 700;">負責項目</p>
+        </div>
+    
+        <div class="block" style="height: 300px;background-color:rgb(180, 165, 153);margin-left: 15%;border-radius: 30px;display: flex;justify-content: center;align-items: center;">
+        <p style="width: 90%; position: relative;color: white;font-size: 26px;font-family: '微軟正黑體','黑體-繁','monospace';line-height: 40px;padding-left: 30%;">
+            <b>·</b>場景製作<br>
+            <b>·</b>血條/時間<br>
+            <b>·</b>互動物件 (觸發問答、選項結果)<br>
+            <b>·</b>結局<br>
+            <b>·</b>Google VR套件設定<br>
+        </p>
+        </div>
+
     <!--心得-->
     <div class="block" style="height: 100px;margin-left: 15%;">
         <p style="position: relative;font-size: 38px;font-family: '微軟正黑體','黑體-繁','monospace';color:rgb(126,113,102);font-weight: 700;">心得</p>
         </div>
     
-        <div class="block" style="height: 300px;background-color:rgb(180, 165, 153);margin-left: 15%;border-radius: 30px;">
-        <p></p>
+        <div class="block" style="height: 380px;background-color:rgb(180, 165, 153);margin-left: 15%;border-radius: 30px;display: flex;justify-content: center;align-items: center;">
+        <p style="position: relative;color: white;width: 90%;font-size: 21px;text-align: center;line-height: 40px;font-family: '微軟正黑體','黑體-繁','monospace';">
+            這個作品是我的第一個VR作品，在這之前沒有接觸過Unity＋VR，<br>
+            從這個作品開始從頭研究VR套件，一開始想用Vive＋Steam VR套件，<br>
+            但後來借用的Vive出了點問題所以改使用Google VR套件，
+            當時時間很緊迫，<br>所以就在兩個禮拜的時間內研究套件和遊戲製作，
+            其實完成品滿陽春的、教育的點也切入的很粗糙，
+            而其他參賽的組別都是學長姐的畢製作品，相比之下又更加拙劣，<br>
+            不過對我來說是一個很深刻的經驗，在展場的時候也向其他學長姐請教了許多問題，<br>
+            比起名次，這個作品更多帶給我的是無價的經驗和知識收穫，
+            而且我也確實突破了自己，<br>做到了在短時間內學習新東西並成功開發專案，這樣的經驗才是最寶貴的！</p>
         </div>
+
+        
+
+        <div style="height: 100px;width: 100%;float: left;"></div>
 
 </body>
 </html>

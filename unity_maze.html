@@ -25,6 +25,10 @@
             justify-content: center;
             align-items: center;
         }
+        #intro b{
+            font-size: 23px;
+            color: rgb(107, 97, 89);
+        }
     </style>
 <head>
     <meta charset="UTF-8">
@@ -63,8 +67,8 @@
     <p style="position: relative;font-size: 38px;font-family: '微軟正黑體','黑體-繁','monospace';color:rgb(126,113,102);font-weight: 700;">作品理念</p>
     </div>
 
-    <div class="block" style="height: 300px;background-color:rgb(180, 165, 153);margin-left: 15%;border-radius: 30px;">
-    <p></p>
+    <div class="block" style="height: 300px;background-color:rgb(180, 165, 153);margin-left: 15%;border-radius: 30px;justify-content: center;align-items: center;display: flex;">
+    <p style="font-family: '微軟正黑體','黑體-繁','monospace';position: relative;text-align: center;color: white;font-size: 26px;width: 90%;line-height: 50px;">這是大二的作品，在此之前有跟同學發想設計過一個迷宮解謎遊戲的企劃案，想把那個遊戲做出實體來，所以先開發了一個小型迷宮遊戲當做試水溫，走的是可愛輕鬆風格。</p>
     </div>
 
     <!--作品介紹-->
@@ -72,17 +76,31 @@
         <p style="position: relative;font-size: 38px;font-family: '微軟正黑體','黑體-繁','monospace';color:rgb(126,113,102);font-weight: 700;">作品介紹</p>
         </div>
     
-        <div class="block" style="height: 300px;background-color:rgb(180, 165, 153);margin-left: 15%;border-radius: 30px;">
-        <p></p>
+        <div class="block" style="height: 400px;background-color:rgb(180, 165, 153);margin-left: 15%;border-radius: 30px;display: flex;justify-content: center;align-items: center;">
+        <p id="intro" style="font-family: '微軟正黑體','黑體-繁','monospace';position: relative;text-align: center;color: white;font-size: 21px;width: 90%;line-height: 35px;">
+        <b>·玩家</b><br>
+        玩家使用AWSD控制主角移動，按下空白鍵可發動攻擊技能。<br>
+        <b>·時間</b><br>
+        時間會倒數，當時間倒數完畢玩家還沒到達終點的話就失敗了。<br>
+        <b>·生命值</b><br>
+        食用蘋果會增加生命值，但有些蘋果會觸發障礙物掉落，碰到障礙物時會扣生命值。<br>
+        <b>·金錢</b><br>
+        碰到金錢會增加金錢值。<br>
+        <b>·障礙物</b><br>
+        碰到某些蘋果會觸發障礙物，玩家碰到障礙物會扣生命值，遭到玩家攻擊時會消滅。
+        </p>
         </div>
     <!--心得-->
     <div class="block" style="height: 100px;margin-left: 15%;">
         <p style="position: relative;font-size: 38px;font-family: '微軟正黑體','黑體-繁','monospace';color:rgb(126,113,102);font-weight: 700;">心得</p>
         </div>
     
-        <div class="block" style="height: 300px;background-color:rgb(180, 165, 153);margin-left: 15%;border-radius: 30px;">
-        <p></p>
+        <div class="block" style="height: 300px;background-color:rgb(180, 165, 153);margin-left: 15%;border-radius: 30px;display: flex;justify-content: center;align-items: center;">
+        <p style="position: relative;font-size: 25px;color: white;font-family: '微軟正黑體','黑體-繁','monospace';width: 90%;text-align: center;line-height: 50px;">印象中這是我第一個完整的遊戲製作，將所學到的基本Unity操作應用在這裡面，<br>算是檢視一下自己對於Unity的學習，因為是第一個自己獨立製作的遊戲，<br>這個作業也獲得了不錯的分數，所以很開心也很有成就感。</p>
         </div>
+
+
+        <div style="height: 100px;width: 100%;float: left;"></div>
 
 </body>
 </html>
