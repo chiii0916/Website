@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <style>
+        
          #title{
             height:100%;
-            width: 40%;
+            width: 50%;
             margin-left: 8%;
             /* background-color: lightslategray; */
             text-align: center;
@@ -50,6 +51,50 @@
         .bar:hover{
             background-color: rgb(172, 182, 192);
         }
+        .img{
+            width: 50%;height: 100%;float: left;display: flex;justify-content: center;align-items: center;
+        }
+        #bar_left{
+            margin-left: 32%;
+        }
+        @media(max-width:1150px){
+            #title{
+                width: 80%;
+                margin-left: 5%;
+            }
+
+        }
+        @media(max-width:800px){
+            #title{
+                font-size: 60px;
+            }
+            .img{
+                width: 90%;
+                margin-left: 5%;
+                margin-top: 0px;
+            }
+            .block p{
+                font-size: 18px;
+            }
+            .block{
+                height: 450px;
+            }
+            #bar_left{
+                margin-left: 15%;
+            }
+        }
+        @media(max-width:600px){
+            .bar{
+                width: 25%;
+            }
+            .block p{
+                font-size: 16px;
+            }
+            .bar p{
+                font-size: 18px;
+                padding-top: 8px;
+            }
+        }
     </style>
 <head>
     <meta charset="UTF-8">
@@ -63,10 +108,10 @@
     </div>
     <!--PIC-->
     <div style="width: 90%;height: 500px;margin-left: 5%;">
-        <div style="width: 50%;height: 100%;float: left;display: flex;justify-content: center;align-items: center;">
+        <div  class="img">
             <img style="width: 95%;height: auto;border-radius: 40px;" src="img/website/IMG_7635.JPG">
         </div>
-        <div style="width: 50%;height: 100%;float: left;display: flex;justify-content: center;align-items: center;">
+        <div class="img">
             <img style="width: 95%;height: auto;border-radius: 40px;" src="img/website/IMG_7343.JPG">
         </div>
     </div>
@@ -93,7 +138,7 @@
 
     <!--Bar-->
     <div style="height: 120px;width: 100%;float: right;margin-top: 20px;">
-        <a href="index.html"><div class="bar" style="margin-left: 32%;"><p class="bar_text">Home</p></div></a>
+        <a href="index.html"><div id="bar_left" class="bar"><p class="bar_text">Home</p></div></a>
         <a href="works.html"><div class="bar" style="margin-left: 2%;"><p class="bar_text">Works</p></div></a>
         <a href="experience.html"><div class="bar" style="margin-left: 2%;"><p class="bar_text">Experience</p></div></a>
         

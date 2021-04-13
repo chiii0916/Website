@@ -32,10 +32,10 @@
         
         #title{
             height:100%;
-            width: 80%;
+            width: 70%;
             margin-left: 8%;
             /* background-color: lightslategray; */
-            /* text-align: center; */
+            text-align: center;
             font-size: 100px;
             letter-spacing: 8px;
             color: rgb(132, 137, 143);
@@ -47,10 +47,11 @@
             /* float: left; */
             text-align: center;
             width: 90%;
-            font-size: 65px;
+            font-size: 70px;
             font-family:sans-serif;
             /* display: flex; */
             color: rgb(78, 78, 78);
+            position: relative;
         }
         .pro_pic{
             
@@ -58,6 +59,7 @@
             margin: auto;
             border: 8px solid rgba(132, 137, 143, 0.884);
             border-radius: 20px;
+            position: relative;
         }
         .block{
             background-color: rgba(132, 137, 143, 0.541);
@@ -92,17 +94,96 @@
             height: 100%;
             position: absolute;
         }
-        /* .block:hover .pro_pic{
+        /*.block:hover .pro_pic{
             opacity: 10%;
         }
         .block:hover .name{
             opacity:20%;
-        } */
+        }*/
         .mask{
             display: none;
             width: 100%;
             background-color: rgba(0, 0, 0, 0.75);
             border-radius: 50px;
+        }
+        .pic_out{
+            height: 100%;width: 50%;float: left;display: flex; align-items: center;justify-content: center;
+        }
+        .name_out{
+            height: 100%;width: 50%;float: left;display: flex;justify-content: center;align-items: center;
+        }
+        
+        #bottom{
+            margin-left: 32%;
+        }
+        
+        
+        
+         @media(max-width:1300px){
+            #title{
+                width: 80%;
+                font-size: 85px;
+            }
+            
+        } 
+        /* @media(max-width:1200px){
+            #title{
+                font-size: 75px;
+                width: 55%;
+            }
+            .name{
+                font-size: 55px;
+            }
+        } */
+        @media(max-width:1000px){
+            .pic_out{
+                width: 100%;
+                height: 60%;
+                margin-left: 0%;
+                margin-top: 5%;
+            }
+            .name_out{
+                width: 100%;
+                
+                height: 30%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .block{
+                height: 800px;
+            }
+            
+            .name{
+                position: relative;
+                font-size: 60px;
+            }
+            .bar{
+                width:30%;
+            }
+            #bottom{
+                margin-left: 5%;
+            }
+            
+            #title{
+                font-size: 60px;
+                width: 95%;
+            }
+            
+            
+        }
+        @media(max-width:700px)
+        {
+            .name{
+                font-size: 60px;
+            }
+            .block{
+                height: 600px;
+            }
+            #title{
+                font-size: 50px;
+                width: 95%;
+            }
         }
     </style>
 <head>
@@ -118,10 +199,10 @@
     </div>
     <!--形象動畫-->
     <div class="block" id="block_1">
-        <div style="height: 100%;width: 50%;float: left;display: flex; align-items: center;justify-content: center;">
+        <div class="pic_out">
             <img class="pro_pic" style="width: 90%;height: auto;" src="img/portfolio/ae_1.png">
         </div>
-        <div style="height: 100%;width: 50%;float: left;display: flex;justify-content: center;align-items: center;">
+        <div class="name_out">
             <h3 class="name" style="text-align: center;">形象動畫</h3>
     </div>
     <div class="mask" id="mask_1">
@@ -130,10 +211,10 @@
     <!--字母動畫-->
 
         <div class="block" id="block_2">
-            <div style="height: 100%;width: 50%;float: left;display: flex; align-items: center;justify-content: center;">
+            <div class="pic_out">
                 <img class="pro_pic" style="width: 90%;height: auto;" src="img/portfolio/ae_PLAY_2.png">
         </div>
-        <div style="height: 100%;width: 50%;float: left;display: flex;justify-content: center;align-items: center;">
+        <div class="name_out">
                 <h3 class="name">字母動畫</h3>
         </div>
         <div class="mask" id="mask_2">
@@ -141,7 +222,7 @@
             </div>
 
         <div style="height: 120px;width: 100%;float: right;margin-top: 70px;">
-            <a href="index.html"><div class="bar" style="margin-left: 32%;"><p class="bar_text">Home</p></div></a>
+            <a href="index.html"><div id="bottom" class="bar" ><p class="bar_text">Home</p></div></a>
             <a href="works.html"><div class="bar" style="margin-left: 2%;"><p class="bar_text">Works</p></div></a>
             <a href="experience.html"><div class="bar" style="margin-left: 2%;"><p class="bar_text">Experience</p></div></a>
             

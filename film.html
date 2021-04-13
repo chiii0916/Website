@@ -58,6 +58,7 @@
             margin: auto;
             border: 8px solid rgba(132, 137, 143, 0.884);
             border-radius: 20px;
+            width: 90%;height: 90%;
         }
         .block{
             background-color: rgba(132, 137, 143, 0.541);
@@ -104,6 +105,32 @@
             background-color: rgba(0, 0, 0, 0.75);
             border-radius: 50px;
         }
+        #bottom{
+            margin-left: 32%;
+        }
+        @media(max-width:1000px){
+            
+            #bottom{
+                margin-left: 5%;
+            }
+            .bar{
+                width:30%;
+            }
+            .pro_pic{
+                width: 90%;height: auto;
+            }
+            .block{
+                height: 550px;
+            }
+            
+            
+        }
+        @media(max-width:700px)
+        {
+            .block{
+                height: 400px;
+            }
+        }
     </style>
 <head>
     <meta charset="UTF-8">
@@ -120,7 +147,7 @@
     <a href="https://youtu.be/ZOkmTfJenQI">
     <div class="block" id="block_1">
         <div style="height: 100%;width: 100%;display: flex; align-items: center;justify-content: center;">
-            <img class="pro_pic" style="width: 90%;height: 90%;" src="img/portfolio/film_宣傳.png">
+            <img class="pro_pic" src="img/portfolio/film_宣傳.png">
         </div>
         <div class="mask" id="mask_1">
         </div>
@@ -131,7 +158,7 @@
     <a href="https://youtu.be/nBFSpJ___G4">
         <div class="block" id="block_2">
             <div style="height: 100%;width: 100%;display: flex; align-items: center;justify-content: center;">
-                <img class="pro_pic" style="width: 90%;height: 90%;" src="img/portfolio/film_前導.png">
+                <img class="pro_pic" src="img/portfolio/film_前導.png">
         </div>
         <div class="mask" id="mask_2">
         </div>
@@ -141,7 +168,7 @@
     <a href="https://youtu.be/HjHIi1odtQ4">
     <div class="block" id="block_3">
         <div style="height: 100%;width: 100%;display: flex; align-items: center;justify-content: center;">
-            <img class="pro_pic" style="width: 90%;height: 90%;" src="img/portfolio/film_ad_umbrella.png">
+            <img class="pro_pic"  src="img/portfolio/film_ad_umbrella.png">
     </div>
     <div class="mask" id="mask_3">
     </div>
@@ -151,7 +178,7 @@
    <a href="https://youtu.be/HjHIi1odtQ4">
     <div class="block" id="block_4">
         <div style="height: 100%;width: 100%;display: flex; align-items: center;justify-content: center;">
-            <img class="pro_pic" style="width: 90%;height: 90%;" src="img/portfolio/film_ad_eat.png">
+            <img class="pro_pic"  src="img/portfolio/film_ad_eat.png">
     </div>
     <div class="mask" id="mask_4">
     </div>
@@ -161,7 +188,7 @@
     <a href="https://youtu.be/XxzV0I4oZlI">
     <div class="block" id="block_5">
         <div style="height: 100%;width: 100%;display: flex; align-items: center;justify-content: center;">
-            <img class="pro_pic" style="width: 90%;height: 90%;" src="img/portfolio/film_城市.png">
+            <img class="pro_pic"  src="img/portfolio/film_城市.png">
     </div>
     <div class="mask" id="mask_5">
     </div>
@@ -170,7 +197,7 @@
     <!--選單-->
 
         <div style="height: 120px;width: 100%;float: right;margin-top: 70px;">
-            <a href="index.html"><div class="bar" style="margin-left: 32%;"><p class="bar_text">Home</p></div></a>
+            <a href="index.html"><div id="bottom" class="bar" ><p class="bar_text">Home</p></div></a>
             <a href="works.html"><div class="bar" style="margin-left: 2%;"><p class="bar_text">Works</p></div></a>
             <a href="experience.html"><div class="bar" style="margin-left: 2%;"><p class="bar_text">Experience</p></div></a>
             

@@ -47,10 +47,11 @@
             /* float: left; */
             text-align: center;
             width: 90%;
-            font-size: 55px;
+            font-size: 70px;
             font-family:sans-serif;
             /* display: flex; */
             color: rgb(78, 78, 78);
+            position: relative;
         }
         .pro_pic{
             
@@ -58,6 +59,7 @@
             margin: auto;
             border: 8px solid rgba(132, 137, 143, 0.884);
             border-radius: 20px;
+            position: relative;
         }
         .block{
             background-color: rgba(132, 137, 143, 0.541);
@@ -66,6 +68,7 @@
             margin-left: 10%;
             border-radius: 50px;
             margin-top: 50px;
+            position: relative;
         }
         .bar{
             border-top-left-radius: 50px;
@@ -77,32 +80,128 @@
             height: 60%;
             float: left;
             margin-top: 30px;
-            position: relative;
         }
         .bar_text{
             font-size: 25px;
             text-align: center;
             color: white;
         }
-         .bar:hover{
+        .bar:hover{
         background-color: rgb(70, 75, 80);
-        } 
+        }
         .mask{
             width: 100%;
             height: 100%;
             position: absolute;
         }
-        /* .block:hover .pro_pic{
+        /*.block:hover .pro_pic{
             opacity: 10%;
         }
         .block:hover .name{
             opacity:20%;
-        } */
+        }*/
         .mask{
             display: none;
             width: 100%;
             background-color: rgba(0, 0, 0, 0.75);
             border-radius: 50px;
+        }
+        .pic_out{
+            height: 100%;width: 50%;float: left;display: flex; align-items: center;justify-content: center;
+        }
+        .name_out{
+            height: 100%;width: 50%;float: left;display: flex;justify-content: center;align-items: center;
+        }
+        
+        #bottom{
+            margin-left: 32%;
+        }
+        
+        #draw{
+            width: auto;height: 90%;
+        }
+        #star{
+            width: auto;height: 90%;
+        }
+        #circle{
+            width: auto;height: 90%;
+        }
+        #image{
+            width: 90%;height: auto;
+        }
+        #chess{
+            width: 100%;
+        }
+        
+        
+        @media(max-width:1100px){
+            .name{
+               font-size: 50px;
+            }
+            #circle{
+                width: 90%;height: auto;
+            }
+            #star{
+                width: 90%;height: auto;
+            }
+            #draw{
+                width: 90%;height: auto;
+            }
+            #image{
+                width: 90%;height: auto;
+            }
+        }
+        @media(max-width:850px){
+            .pic_out{
+                width: 100%;
+                height: 60%;
+                margin-left: 0%;
+                margin-top: 5%;
+            }
+            .name_out{
+                width: 100%;
+                
+                height: 30%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .block{
+                height: 800px;
+            }
+            
+            .name{
+                position: relative;
+                font-size: 50px;
+            }
+            .bar{
+                width:30%;
+            }
+            #bottom{
+                margin-left: 5%;
+            }
+            #block_5{
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            #chess{
+                position: relative;
+            }
+            
+        }
+        @media(max-width:600px)
+        {
+            .name{
+                font-size: 40px;
+            }
+            .block{
+                height: 500px;
+            }
+            #title{
+                font-size: 70px;
+            }
         }
     </style>
 <head>
@@ -119,10 +218,10 @@
     <!--circle-->
     <a href="https://github.com/chiii0916/Draw_circle">
     <div class="block" id="block_1">
-        <div style="height: 100%;width: 50%;float: left;display: flex; align-items: center;justify-content: center;">
-            <img class="pro_pic" style="width: auto;height: 90%;" src="img/portfolio/java_circle.png">
+        <div class="pic_out">
+            <img id="circle" class="pro_pic"  src="img/portfolio/java_circle.png">
         </div>
-        <div style="height: 100%;width: 50%;float: left;display: flex;justify-content: center;align-items: center;">
+        <div class="name_out" >
             <h3 class="name" style="text-align: center;">Draw_Circle</h3>
     </div>
     <div class="mask" id="mask_1">
@@ -133,10 +232,10 @@
     <!--star-->
     <a href="https://github.com/chiii0916/Draw_circle">
         <div class="block" id="block_2">
-            <div style="height: 100%;width: 50%;float: left;display: flex; align-items: center;justify-content: center;">
-                <img class="pro_pic" style="width: auto;height: 90%;" src="img/portfolio/java_stars.png">
+            <div class="pic_out">
+                <img id="star" class="pro_pic" src="img/portfolio/java_stars.png">
         </div>
-        <div style="height: 100%;width: 50%;float: left;display: flex;justify-content: center;align-items: center;">
+        <div class="name_out">
                 <h3 class="name">Draw_Stars</h3>
         </div>
         <div class="mask" id="mask_2">
@@ -146,10 +245,10 @@
     <!--繪圖板-->
     <a href="https://github.com/chiii0916/Painter">
     <div class="block" id="block_3">
-        <div style="height: 100%;width: 50%;float: left;display: flex; align-items: center;justify-content: center;">
-            <img class="pro_pic" style="width: auto;height: 90%;" src="img/portfolio/java_繪圖板.png">
+        <div class="pic_out">
+            <img id="draw" class="pro_pic" src="img/portfolio/java_繪圖板.png">
         </div>
-        <div style="height: 100%;width: 50%;float: left;display: flex;justify-content: center;align-items: center;">
+        <div class="name_out">
             <h3 class="name">繪圖板</h3>
     </div>
     <div class="mask" id="mask_3">
@@ -159,10 +258,10 @@
         <!--影像分析處理-->
     <a href="https://github.com/chiii0916/JAVA_Imageprocessing">
     <div class="block" id="block_4">
-        <div style="height: 100%;width: 50%;float: left;display: flex; align-items: center;justify-content: center;">
-            <img class="pro_pic" style="width: 90%;height: auto;" src="img/portfolio/java-影像分析.png">
+        <div class="pic_out">
+            <img id="image" class="pro_pic" src="img/portfolio/java-影像分析.png">
         </div>
-        <div style="height: 100%;width: 50%;float: left;display: flex;justify-content: center;align-items: center;">
+        <div class="name_out">
             <h3 class="name">影像分析處理</h3>
     </div>
     <div class="mask" id="mask_4">
@@ -175,7 +274,7 @@
         <!-- <div style="height: 100%;width: 50%;float: left;display: flex; align-items: center;justify-content: center;">
              <img class="pro_pic" style="width: 90%;height: auto;" src=""> 
         </div> -->
-        <div style="height: 100%;width: 100%;float: left;display: flex;justify-content: center;align-items: center;">
+        <div id="chess" class="name_out">
             <h3 class="name">象棋對戰</h3>
     </div>
     <div class="mask" id="mask_5">
@@ -186,7 +285,7 @@
         
     
         <div style="height: 120px;width: 100%;float: right;margin-top: 70px;">
-            <a href="index.html"><div class="bar" style="margin-left: 32%;"><p class="bar_text">Home</p></div></a>
+            <a href="index.html"><div id="bottom" class="bar" ><p class="bar_text">Home</p></div></a>
             <a href="works.html"><div class="bar" style="margin-left: 2%;"><p class="bar_text">Works</p></div></a>
             <a href="experience.html"><div class="bar" style="margin-left: 2%;"><p class="bar_text">Experience</p></div></a>
             

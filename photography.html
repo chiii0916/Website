@@ -24,12 +24,16 @@
             /* display: flex; */
             color: rgb(78, 78, 78);
         }
+        .pic{
+            height: 100%;width: 100%;display: flex; align-items: center;justify-content: center;
+        }
         .pro_pic{
             
             display: block;
             margin: auto;
             border: 8px solid rgba(132, 137, 143, 0.884);
             border-radius: 20px;
+            position: relative;
         }
         .block{
             background-color: rgba(132, 137, 143, 0.541);
@@ -59,6 +63,110 @@
         .bar:hover{
         background-color: rgb(70, 75, 80);
         }
+        .name_out{
+            height: 100%;width: 50%;float: left;display: flex;justify-content: center;align-items: center;
+        }
+        
+        #bottom{
+            margin-left: 32%;
+        }
+        #pic_1{
+            width: auto;height: 90%;
+        }
+        #pic_2{
+            width: auto;height: 90%;
+        }
+        #pic_3{
+            width: auto;height: 90%;
+        }
+        #pic_4{
+            width: auto;height: 90%;
+        }
+        #pic_5{
+            width: 90%;height: auto;
+        }
+        #pic_6{
+            width: 90%;height: auto;
+        }
+        #pic_7{
+            width: 90%;height: auto;
+        }
+        #pic_8{
+            width: 90%;height: auto;
+        }
+        
+        
+         /* @media(max-width:1300px){
+            #title{
+                width: 80%;
+                font-size: 85px;
+            }
+            
+        }  */
+        /* @media(max-width:1200px){
+            #title{
+                font-size: 75px;
+                width: 55%;
+            }
+            .name{
+                font-size: 55px;
+            }
+        } */
+        @media(max-width:1300px){
+            #pic_1{
+                width: 85%;height: auto;
+            }
+            #pic_2{
+                width: 85%;height: auto;
+            }
+        }
+        @media(max-width:1000px){
+            .block{
+                width: 100%;
+                margin-left: 0%;
+            }
+           
+            .block{
+                height: 1000px;
+            }
+            
+            .name{
+                position: relative;
+                font-size: 60px;
+            }
+            .bar{
+                width:30%;
+            }
+            #bottom{
+                margin-left: 5%;
+            }
+            
+            #title{
+                font-size: 80px;
+                width: 80%;
+            }
+            #pic_1{
+                width: auto;height: 90%;
+            }
+            #pic_2{
+                width: auto;height: 90%;
+            }
+            
+        }
+        @media(max-width:700px)
+        {
+            .name{
+                font-size: 60px;
+            }
+            .block{
+                height: 600px;
+            }
+            #title{
+                font-size: 55px;
+                width: 85%;
+                margin-left: 0%;
+            }
+        }
     </style>
 <head>
     <meta charset="UTF-8">
@@ -73,63 +181,63 @@
     </div>
     <!--busan_1-->
     <div class="block" >
-        <div style="height: 100%;width: 100%;display: flex; align-items: center;justify-content: center;">
-            <img class="pro_pic" style="width: auto;height: 90%;" src="img/website/IMG_7572.JPG">
+        <div class="pic">
+            <img id="pic_1" class="pro_pic"  src="img/website/IMG_7572.JPG">
         </div>
         
     </div>
     <!--busan_2-->
     <div class="block" >
-        <div style="height: 100%;width: 100%;display: flex; align-items: center;justify-content: center;">
-            <img class="pro_pic" style="width: auto;height: 90%;" src="img/website/IMG_7573.JPG">
+        <div class="pic">
+            <img id="pic_2" class="pro_pic" src="img/website/IMG_7573.JPG">
         </div>
         
     </div>
     <!--alisan_1-->
     <div class="block" >
-        <div style="height: 100%;width: 100%;display: flex; align-items: center;justify-content: center;">
-            <img class="pro_pic" style="width: auto;height: 90%;" src="img/website/7BDF7794-1E08-47AD-9A4B-9E26A3F00C33.JPG">
+        <div class="pic">
+            <img id="pic_3" class="pro_pic"  src="img/website/7BDF7794-1E08-47AD-9A4B-9E26A3F00C33.JPG">
         </div>
         
     </div>
      <!--alisan_2-->
      <div class="block" >
-        <div style="height: 100%;width: 100%;display: flex; align-items: center;justify-content: center;">
-            <img class="pro_pic" style="width: auto;height: 90%;" src="img/website/IMG_6249.JPG">
+        <div class="pic">
+            <img id="pic_4" class="pro_pic" src="img/website/IMG_6249.JPG">
         </div>
         
     </div>
      <!--Taipei_1-->
      <div class="block" >
-        <div style="height: 100%;width: 100%;display: flex; align-items: center;justify-content: center;">
-            <img class="pro_pic" style="width: 90%;height: auto;" src="img/website/IMG_1202.JPG">
+        <div class="pic">
+            <img id="pic_5" class="pro_pic"  src="img/website/IMG_1202.JPG">
         </div>
         
     </div>
      <!--Taipei_2-->
      <div class="block" >
-        <div style="height: 100%;width: 100%;display: flex; align-items: center;justify-content: center;">
-            <img class="pro_pic" style="width: 90%;height: auto;" src="img/website/IMG_1210.JPG">
+        <div class="pic">
+            <img id="pic_6" class="pro_pic"  src="img/website/IMG_1210.JPG">
         </div>
         
     </div>
      <!--busan_3-->
      <div class="block" >
-        <div style="height: 100%;width: 100%;display: flex; align-items: center;justify-content: center;">
-            <img class="pro_pic" style="width: 90%;height: auto;" src="img/website/IMG_7579.JPG">
+        <div class="pic">
+            <img id="pic_7" class="pro_pic"  src="img/website/IMG_7579.JPG">
         </div>
         
     </div>
      <!--busan_4-->
      <div class="block" >
-        <div style="height: 100%;width: 100%;display: flex; align-items: center;justify-content: center;">
-            <img class="pro_pic" style="width: 90%;height: auto;" src="img/website/IMG_7578.JPG">
+        <div class="pic">
+            <img id="pic_8" class="pro_pic" src="img/website/IMG_7578.JPG">
         </div>
         
     </div>
 
         <div style="height: 120px;width: 100%;float: right;margin-top: 70px;">
-            <a href="index.html"><div class="bar" style="margin-left: 32%;"><p class="bar_text">Home</p></div></a>
+            <a href="index.html"><div id="bottom" class="bar" ><p class="bar_text">Home</p></div></a>
             <a href="works.html"><div class="bar" style="margin-left: 2%;"><p class="bar_text">Works</p></div></a>
             <a href="experience.html"><div class="bar" style="margin-left: 2%;"><p class="bar_text">Experience</p></div></a>
             

@@ -107,6 +107,67 @@
             background-color: rgba(0, 0, 0, 0.75);
             border-radius: 50px;
         }
+        .pic_out{
+            height: 100%;width: 50%;float: left;display: flex; align-items: center;justify-content: center;
+        }
+        .name_out{
+            height: 100%;width: 50%;float: left;display: flex;justify-content: center;align-items: center;
+        }
+        #plane{
+            width: auto;height: 90%;
+        }
+        #maze{
+            width: 90%;height: auto;
+        }
+        #fire{
+            width: 90%;height: auto;
+        }
+        #bottom{
+            margin-left: 32%;
+        }
+        @media(max-width:850px){
+            .pic_out{
+                width: 100%;
+                height: 60%;
+                margin-left: 0%;
+                margin-top: 5%;
+            }
+            .name_out{
+                width: 100%;
+                
+                height: 30%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .block{
+                height: 1000px;
+            }
+            #plane{
+                width: 50%;height: auto;
+            }
+            .name{
+                position: relative;
+            }
+            .bar{
+                width:30%;
+            }
+            #bottom{
+                margin-left: 5%;
+            }
+        }
+        @media(max-width:600px)
+        {
+            .name{
+                font-size: 40px;
+            }
+            .block{
+                height: 500px;
+            }
+            #plane{
+                width: 45%;height: auto;
+            }
+        }
     </style>
 
 
@@ -128,10 +189,10 @@
     <a href="unity_airplane.html">
     <div class="block" id="block_1" >
         <!-- <div class="mask"> -->
-        <div style="height: 100%;width: 50%;float: left;display: flex; align-items: center;justify-content: center;">
-            <img class="pro_pic" style="width: auto;height: 90%;" src="img/portfolio/2D手遊-pic.png">
+        <div class="pic_out">
+            <img id="plane" class="pro_pic" src="img/portfolio/2D手遊-pic.png">
         </div>
-        <div style="height: 100%;width: 50%;float: left;display: flex;justify-content: center;align-items: center;">
+        <div class="name_out" >
             <h3 class="name">2D戰鬥機手遊</h3>
     </div>
     <div class="mask" id="mask_1">
@@ -142,10 +203,10 @@
 
     <a href="unity_maze.html">   
     <div class="block" id="block_2" >
-            <div style="height: 100%;width: 50%;float: left;display: flex; align-items: center;justify-content: center;">
-                <img class="pro_pic" style="width: 90%;height: auto;" src="img/portfolio/2D迷宮打怪.png">
+            <div class="pic_out">
+                <img id="maze" class="pro_pic"  src="img/portfolio/2D迷宮打怪.png">
             </div>
-            <div style="height: 100%;width: 50%;float: left;display: flex;justify-content: center;align-items: center;">
+            <div class="name_out" >
                 <h3 class="name">2D迷宮小遊戲</h3>
         </div>
         <!-- <div class="mask" id="mask_2">
@@ -155,10 +216,10 @@
     <!--3D 火災逃生VR-->
     <a href="unity_3DVR.html">
     <div class="block" id="block_3">
-        <div style="height: 100%;width: 50%;float: left;display: flex; align-items: center;justify-content: center;">
-            <img class="pro_pic" style="width: 90%;height: auto;" src="img/portfolio/火災逃生VR-選項.png">
+        <div class="pic_out" >
+            <img id="fire" class="pro_pic" src="img/portfolio/火災逃生VR-選項.png">
         </div>
-        <div style="height: 100%;width: 50%;float: left;display: flex;justify-content: center;align-items: center;">
+        <div class="name_out" >
             <h3 class="name">3D火災逃生VR</h3>
     </div>
     <div class="mask" id="mask_3">
@@ -168,7 +229,7 @@
     </a>
 
         <div style="height: 120px;width: 100%;float: right;margin-top: 70px;">
-            <a href="index.html"><div class="bar" style="margin-left: 32%;"><p class="bar_text">Home</p></div></a>
+            <a href="index.html"><div id="bottom" class="bar"><p class="bar_text">Home</p></div></a>
             <a href="works.html"><div class="bar" style="margin-left: 2%;"><p class="bar_text">Works</p></div></a>
             <a href="experience.html"><div class="bar" style="margin-left: 2%;"><p class="bar_text">Experience</p></div></a>
             

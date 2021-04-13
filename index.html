@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+    
     <style>
+        
+
+        #top_bar{
+            height: 100px;
+            width: 40%;
+            background-color:white;
+            float:left;
+            margin-left: 8%;
+            margin-top: 40px;
+        }
+        
         .bar{
             height: 70px;width: 30%;
             background-color: rgb(168, 166, 166);
@@ -29,29 +41,111 @@
             background-color: rgb(94, 94, 94);
             color: white;
         }
+        #top_title{
+            height: 150px;
+            width: 45%;
+            background-color:white;
+            float: right;
+            margin-right: 80px;
+        }
+        #img{
+            height: 600px;width: 50%;margin-left: 35px;float: left;
+        }
+        #contain{
+            height: 600px;width: 100%;background-color: white;
+        }
+        #word{
+            height: 400px;width: 40%;float: left;margin-left: 30px;margin-top: 100px;border: rgb(201, 201, 201) solid 5px;
+        }
+        @media (min-width:968px)and (max-width:1200px){
+            #top_title{
+                margin-right: 0px;
+                margin-left: 5%;
+            }
+            #title{
+                font-size: 40px;
+            }
+            #top_bar{
+                margin-left: 6%;
+            }
+        }
+        @media (min-width:0px) and (max-width:968px){
+            #top_bar{
+                width: 100%;
+                /* background-color: aqua; */
+                margin: 0px;
+                padding-left: 30px;
+            }
+            .bar_font{
+                font-size: 30px;
+                margin-top: 8%;
+            }
+            #top_title{
+                width: 100%;
+                /* background-color: wheat; */
+                padding-left: 25%;
+            }
+            #title{
+                font-size: 60px;
+                margin-top: 40px;
+            }
+            #img{
+                width: 90%;
+                margin-left: 5%;
+            }
+            #word{
+                width: 80%;
+                margin-left: 10%;
+                border: rgb(201, 201, 201) solid 3px;
+                height: 550px;
+            }
+            #word img{
+                height: 90%;
+                width: auto;
+                
+            }
+            @media screen and (max-width:635px){
+                .bar_font{
+                font-size: 22px;
+                margin-top: 8%;
+            }
+            #title{
+                font-size: 40px;
+                margin-top: 40px;
+            }
+            #top_title{
+                padding-left: 30%;
+            }
+            #word{
+                padding-top:15% ;
+            }
+            }
+        }
     </style>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moochiii's Website</title>
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script> 
 </head>
 
 <body>
     <div style="height:50px; width:100%;background-color:white;"></div>
     <div style="height: 150px;width: 100%;background-color:white;">
-    <div style="height: 100px;width: 40%;background-color:white;float:left;margin-left: 8%;margin-top: 40px;">
+    <div id="top_bar" style="">
         <a href="about.html"><div class="bar"><p class="bar_font">About Me</p></div></a>
         <a href="works.html"><div class="bar"><p class="bar_font">Works</p></div></a>
         <a href="experience.html"><div class="bar"><p class="bar_font">Experience</p></div></a>
     </div>
-    <div style="height: 150px;width: 45%;background-color:white;float: right;margin-right: 80px;"><h1 id="title">Yunchi's Portfolio</h1></div>
+    <div id="top_title" ><h1 id="title">Yunchi's Portfolio</h1></div>
     </div>
-    <div style="height: 600px;width: 100%;background-color: white;">
-    <div style="height: 600px;width: 50%;margin-left: 35px;float: left;">
+    <div id="contain">
+    <div id="img">
         <img style="height: 600px;width: 100%;border-radius: 20px;" src="img/website/IMG_7587.JPG">
         
     </div>
-    <div style="height: 400px;width: 40%;float: left;margin-left: 30px;margin-top: 100px;border: rgb(201, 201, 201) solid 5px;">
+    <div id="word">
     <img style="height: auto;width: 100%;" src="img/website/His ways are higher than my owns.png">
     </div>
     </div>

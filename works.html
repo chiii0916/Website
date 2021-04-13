@@ -11,21 +11,44 @@
             color: rgb(109, 135, 136);
             letter-spacing: 10px;
         }
-        .menu{
+        .menu_l{
             height: 60%;
             width: 35%;
             background-color: rgb(109, 135, 136);
             float: left;
             border-radius:40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 12.5%;
         }
-        .menu p{
+        .menu_r{
+            height: 60%;
+            width: 35%;
+            background-color: rgb(109, 135, 136);
+            float: left;
+            border-radius:40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 5%;
+        }
+        .menu_l p{
             font-size: 45px;
             color: white;
             margin: top 0px;;
             text-align: center;
+            position: relative;
+        }
+        .menu_r p{
+            font-size: 45px;
+            color: white;
+            margin: top 0px;;
+            text-align: center;
+            position: relative;
         }
         .ppp{
-            margin-top: 3%;
+            
             font-size: 40px;
         }
         .bar{
@@ -47,6 +70,52 @@
         .bar:hover{
             background-color: rgb(101, 123, 124);
         }
+        #bottom{
+            margin-left: 32%;
+        }
+        @media (max-width:1250px){
+            .menu_l p{
+                font-size: 35px;
+            }
+            .menu_r p{
+                font-size: 35px;
+            }
+        }
+        @media (max-width:980px){
+            .menu_l{
+                width: 70%;
+                margin-top: 30px;
+                margin-left: 15%;
+            }
+            .menu_r{
+                width: 70%;
+                margin-top: 30px;
+                margin-left: 15%;
+            }
+            .menu_l p{
+                font-size: 40px;
+            }
+            .menu_r p{
+                font-size: 40px;
+            }
+            #title{
+                margin-left: 15%;
+            }
+            #bottom{
+                margin-left: 5%;
+            }
+            .bar{
+                width: 30%;
+            }
+        }
+        @media(max-width:600px){
+            .menu_l p{
+                font-size:30px;
+            }
+            .menu_r p{
+                font-size: 30px;
+            }
+        }
     </style>
 <head>
     <meta charset="UTF-8">
@@ -59,40 +128,40 @@
     </div>
     <div style="height: 600px;width: 100%;margin-top: 30px;">
         <div style="height: 40%;width: 100%;padding-top:5.5%;">
-            <a href="Unity.html"><div class="menu" style="margin-left: 12.5%;"><p>Unity</p></div></a>
-            <a href="Arduino.html"><div class="menu" style="margin-left: 5%;"><p>Arduino</p></div></a>
+            <a href="Unity.html"><div class="menu_l" ><p>Unity</p></div></a>
+            <a href="Arduino.html"><div class="menu_r" ><p>Arduino</p></div></a>
         </div>
         <div style="height: 40%;width: 100%;">
-            <a href="Java.html"><div class="menu" style="margin-left: 12.5%;"><p>Java</p></div></a>
-            <a href="web.html"><div class="menu" style="margin-left: 5%;"><p class="ppp">HTML/CSS/<br>Javascripts/JQuery</p></div></a>
+            <a href="Java.html"><div class="menu_l" ><p>Java</p></div></a>
+            <a href="web.html"><div class="menu_r" ><p class="ppp">HTML/CSS/<br>Javascripts/JQuery</p></div></a>
            
         </div>
         
     </div>
     <div style="height: 600px;width: 100%;margin-top: 30px;">
         <div style="height: 40%;width: 100%;padding-top:5.5%;">
-            <a href="app.html"><div class="menu" style="margin-left: 12.5%;"><p>C#</p></div></a>
-            <a href="photoshop.html"><div class="menu" style="margin-left: 5%;"><p>Photoshop</p></div></a>
+            <a href="app.html"><div class="menu_l" ><p>C#</p></div></a>
+            <a href="photoshop.html"><div class="menu_r" ><p>Photoshop</p></div></a>
             
         </div>
         <div style="height: 40%;width: 100%;">
-            <a href="maya.html"><div class="menu" style="margin-left: 12.5%;"><p>Maya</p></div></a>
-            <a href="ae.html"><div class="menu" style="margin-left: 5%;"><p>After Effects</p></div></a>
+            <a href="maya.html"><div class="menu_l" ><p>Maya</p></div></a>
+            <a href="ae.html"><div class="menu_r" ><p>After Effects</p></div></a>
             
         </div>
         
     </div>
     <div style="height: 600px;width: 100%;margin-top: 30px;">
         <div style="height: 40%;width: 100%;padding-top:5.5%;">
-            <a href="photography.html"><div class="menu" style="margin-left: 12.5%;"><p>攝影</p></div></a>
-            <a href="film.html"><div class="menu" style="margin-left: 5%;"><p>剪輯</p></div></a>
+            <a href="photography.html"><div class="menu_l" ><p>攝影</p></div></a>
+            <a href="film.html"><div class="menu_r" ><p>剪輯</p></div></a>
             
             
         </div>
         
     </div>
     <div style="height: 120px;width: 100%;float: right;margin-top: 20px;">
-        <a href="index.html"><div class="bar" style="margin-left: 32%;"><p class="bar_text">Home</p></div></a>
+        <a href="index.html"><div id="bottom" class="bar"><p class="bar_text">Home</p></div></a>
         <a href="about.html"><div class="bar" style="margin-left: 2%;"><p class="bar_text">About Me</p></div></a>
         <a href="experience.html"><div class="bar" style="margin-left: 2%;"><p class="bar_text">Experience</p></div></a>
         

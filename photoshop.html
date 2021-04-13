@@ -32,7 +32,7 @@
         
         #title{
             height:100%;
-            width: 40%;
+            width: 50%;
             margin-left: 8%;
             /* background-color: lightslategray; */
             text-align: center;
@@ -47,10 +47,11 @@
             /* float: left; */
             text-align: center;
             width: 90%;
-            font-size: 55px;
+            font-size: 70px;
             font-family:sans-serif;
             /* display: flex; */
             color: rgb(78, 78, 78);
+            position: relative;
         }
         .pro_pic{
             
@@ -58,11 +59,12 @@
             margin: auto;
             border: 8px solid rgba(132, 137, 143, 0.884);
             border-radius: 20px;
+            position: relative;
         }
         .block{
             background-color: rgba(132, 137, 143, 0.541);
             width: 80%;
-            height: 550px;
+            height: 500px;
             margin-left: 10%;
             border-radius: 50px;
             margin-top: 50px;
@@ -86,23 +88,101 @@
         }
         .bar:hover{
         background-color: rgb(70, 75, 80);
-        } 
+        }
         .mask{
             width: 100%;
             height: 100%;
             position: absolute;
         }
-        /* .block:hover .pro_pic{
+        /*.block:hover .pro_pic{
             opacity: 10%;
         }
         .block:hover .name{
             opacity:20%;
-        } */
+        }*/
         .mask{
             display: none;
             width: 100%;
             background-color: rgba(0, 0, 0, 0.75);
             border-radius: 50px;
+        }
+        .pic_out{
+            height: 100%;width: 50%;float: left;display: flex; align-items: center;justify-content: center;
+        }
+        .name_out{
+            height: 100%;width: 50%;float: left;display: flex;justify-content: center;align-items: center;
+        }
+        
+        #bottom{
+            margin-left: 32%;
+        }
+        
+        
+        
+        /* @media(max-width:1100px){
+            .name{
+               font-size: 50px;
+            }
+            
+        } */
+        /* @media(max-width:1200px){
+            #title{
+                font-size: 75px;
+                width: 55%;
+            }
+            .name{
+                font-size: 55px;
+            }
+        } */
+        @media(max-width:1000px){
+            .pic_out{
+                width: 100%;
+                height: 60%;
+                margin-left: 0%;
+                margin-top: 5%;
+            }
+            .name_out{
+                width: 100%;
+                
+                height: 30%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .block{
+                height: 1100px;
+            }
+            
+            .name{
+                position: relative;
+                font-size: 60px;
+            }
+            .bar{
+                width:30%;
+            }
+            #bottom{
+                margin-left: 5%;
+            }
+            
+            #title{
+                font-size: 80px;
+                width: 70%;
+            }
+            
+            
+        }
+        @media(max-width:600px)
+        {
+            .name{
+                font-size: 40px;
+            }
+            .block{
+                height: 700px;
+            }
+            #title{
+                font-size: 60px;
+                width: 90%;
+            }
         }
     </style>
 
@@ -117,24 +197,24 @@
         <!-- <div id="title">ABOUT ME</div> -->
         <h1  id="title">Photoshop</h1>
     </div>
-    <!--互動LED-->
+    <!--花之舞者-->
     <div class="block" id="block_1">
-        <div style="height: 100%;width: 50%;float: left;display: flex; align-items: center;justify-content: center;">
+        <div class="pic_out">
             <img class="pro_pic" style="width: auto;height: 90%;" src="img/portfolio/107期末-2.jpg">
         </div>
-        <div style="height: 100%;width: 50%;float: left;display: flex;justify-content: center;align-items: center;">
+        <div class="name_out">
             <h3 class="name" style="text-align: center;">縮小人生-花之舞者</h3>
     </div>
     <div class="mask" id="mask_1">
     </div>
     </div>
-    <!--視覺音效-->
+    <!--巨風-->
 
         <div class="block" id="block_2">
-            <div style="height: 100%;width: 50%;float: left;display: flex; align-items: center;justify-content: center;">
+            <div class="pic_out">
                 <img class="pro_pic" style="width: 90%;height: auto;" src="img/portfolio/1072期末-1.jpg">
         </div>
-        <div style="height: 100%;width: 50%;float: left;display: flex;justify-content: center;align-items: center;">
+        <div class="name_out">
                 <h3 class="name">縮小人生-巨風</h3>
         </div>
         <div class="mask" id="mask_2">
@@ -143,7 +223,7 @@
     
 
         <div style="height: 120px;width: 100%;float: right;margin-top: 70px;">
-            <a href="index.html"><div class="bar" style="margin-left: 32%;"><p class="bar_text">Home</p></div></a>
+            <a href="index.html"><div id="bottom" class="bar"><p class="bar_text">Home</p></div></a>
             <a href="works.html"><div class="bar" style="margin-left: 2%;"><p class="bar_text">Works</p></div></a>
             <a href="experience.html"><div class="bar" style="margin-left: 2%;"><p class="bar_text">Experience</p></div></a>
             
